@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@aoc-2021/day-1": ["packages/day-1/src/index.ts"],
+      "@aoc-2021/day-2": ["packages/day-2/src/index.ts"],
+      "@aoc-2021/day-3": ["packages/day-3/src/index.ts"],
+      "@aoc-2021/day-4": ["packages/day-4/src/index.ts"],
+      "@aoc-2021/day-5": ["packages/day-5/src/index.ts"],
+      "@aoc-2021/day-6": ["packages/day-6/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

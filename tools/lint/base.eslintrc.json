@@ -1,0 +1,311 @@
+{
+  "overrides": [
+    {
+      "files": [
+        "*.js",
+        "*.jsx",
+        "*.ts",
+        "*.tsx"
+      ],
+      "extends": [
+        "eslint:recommended"
+      ],
+      "rules": {
+        "array-bracket-spacing": [
+          "warn",
+          "never"
+        ],
+        "array-bracket-newline": [
+          "warn",
+          {
+            "multiline": true
+          }
+        ],
+        "arrow-body-style": [
+          "error",
+          "as-needed"
+        ],
+        "array-callback-return": [
+          "error",
+          {
+            "checkForEach": true
+          }
+        ],
+        "array-element-newline": [
+          "warn",
+          "consistent"
+        ],
+        "arrow-parens": [
+          "error",
+          "as-needed"
+        ],
+        "capitalized-comments": [
+          "error",
+          "always",
+          {
+            "ignoreConsecutiveComments": true
+          }
+        ],
+        "comma-dangle": [
+          "error",
+          "always-multiline"
+        ],
+        "comma-spacing": [
+          "error",
+          {
+            "before": false,
+            "after": true
+          }
+        ],
+        "comma-style": [
+          "error",
+          "last"
+        ],
+        "camelcase": [
+          "warn",
+          {
+            "ignoreDestructuring": true
+          }
+        ],
+        "curly": "error",
+        "dot-notation": "error",
+        "eol-last": [
+          "error",
+          "always"
+        ],
+        "eqeqeq": [
+          "error",
+          "always"
+        ],
+        "guard-for-in": "error",
+        "indent": [
+          "error",
+          2,
+          {
+            "SwitchCase": 1
+          }
+        ],
+        "key-spacing": "error",
+        "keyword-spacing": [
+          "error",
+          {
+            "after": true,
+            "before": true
+          }
+        ],
+        "lines-around-comment": [
+          "error",
+          {
+            "beforeLineComment": true,
+            "beforeBlockComment": true,
+            "allowBlockStart": true,
+            "allowClassStart": true,
+            "allowObjectStart": true,
+            "allowArrayStart": true,
+            "ignorePattern": "#endregion"
+          }
+        ],
+        "line-comment-position": [
+          "warn",
+          {
+            "position": "above",
+            "ignorePattern": "  "
+          }
+        ],
+        "max-len": [
+          "warn",
+          {
+            "code": 120,
+            "ignorePattern": "(^const.*?require)|(^import)"
+          }
+        ],
+        "no-bitwise": "error",
+        "no-caller": "error",
+        "no-cond-assign": "error",
+        "no-console": "error",
+        "no-debugger": "error",
+        "no-empty": "warn",
+        "no-eval": "error",
+        "no-extra-label": "error",
+        "no-multiple-empty-lines": [
+          "error",
+          {
+            "max": 1,
+            "maxBOF": 0
+          }
+        ],
+        "no-new-wrappers": "error",
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": [
+              {
+                "name": "@angular/forms",
+                "importNames": [
+                  "UntypedFormBuilder",
+                  "UntypedFormGroup",
+                  "UntypedFormControl"
+                ],
+                "message": "Please use typed forms instead."
+              }
+            ]
+          }
+        ],
+        "no-restricted-syntax": [
+          "warn",
+          {
+            "selector": "PropertyDefinition[definite=true]",
+            "message": "Non-null property assertions are discouraged, if you do this for an input make sure you include this property in the selector for the component, otherwise this property should be marked optional"
+          }
+        ],
+        "no-throw-literal": "error",
+        "no-trailing-spaces": "error",
+        "no-undef-init": "error",
+        "no-unsafe-finally": "error",
+        "no-unneeded-ternary": [
+          "warn",
+          {
+            "defaultAssignment": false
+          }
+        ],
+        "no-unused-expressions": "warn",
+        "no-unused-labels": "error",
+        "no-unused-vars": [
+          "warn",
+          {
+            "argsIgnorePattern": "^_"
+          }
+        ],
+        "no-var": "error",
+        "no-shadow": "error",
+        "object-curly-spacing": [
+          "warn",
+          "always",
+          {
+            "objectsInObjects": false,
+            "arraysInObjects": false
+          }
+        ],
+        "object-curly-newline": [
+          "warn",
+          {
+            "ObjectExpression": {
+              "minProperties": 4,
+              "multiline": true,
+              "consistent": true
+            },
+            "ObjectPattern": {
+              "consistent": true
+            }
+          }
+        ],
+        "object-shorthand": [
+          "error",
+          "always"
+        ],
+        "one-var": [
+          "error",
+          "never"
+        ],
+        "padding-line-between-statements": [
+          "error",
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": [
+              "block-like",
+              "expression"
+            ]
+          },
+          {
+            "blankLine": "always",
+            "prev": [
+              "block-like"
+            ],
+            "next": "*"
+          },
+          {
+            "blankLine": "never",
+            "prev": [
+              "case"
+            ],
+            "next": "*"
+          }
+        ],
+        "prefer-const": [
+          "warn",
+          {
+            "destructuring": "all"
+          }
+        ],
+        "quote-props": [
+          "error",
+          "as-needed"
+        ],
+        "quotes": [
+          "error",
+          "single",
+          {
+            "avoidEscape": true,
+            "allowTemplateLiterals": true
+          }
+        ],
+        "radix": "error",
+        "require-atomic-updates": 0,
+        "semi": "error",
+        "sort-imports": "error",
+        "space-before-blocks": "error",
+        "space-before-function-paren": [
+          "error",
+          {
+            "anonymous": "always",
+            "named": "never",
+            "asyncArrow": "always"
+          }
+        ],
+        "spaced-comment": [
+          "error",
+          "always",
+          {
+            "line": {
+              "exceptions": [
+                "*"
+              ]
+            },
+            "block": {
+              "exceptions": [
+                "-",
+                "+",
+                "/",
+                "*"
+              ],
+              "balanced": true
+            }
+          }
+        ],
+        "space-infix-ops": [
+          "error",
+          {
+            "int32Hint": false
+          }
+        ],
+        "use-isnan": "error",
+        "valid-typeof": "error"
+      }
+    },
+    {
+      "files": [
+        "*.spec.ts",
+        "*.spec.js",
+        "jest.config.js"
+      ],
+      "env": {
+        "jest": true,
+        "node": true
+      },
+      "rules": {
+        "no-console": "off"
+      }
+    }
+  ]
+}

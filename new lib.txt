@@ -1,0 +1,1 @@
+npx nx generate @nrwl/js:library day-1 --publishable --importPath @aoc-2021/day-1
